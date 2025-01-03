@@ -8,7 +8,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use('/assets', express.static('assets'));
 
-app.get('/Portfolio', (req, res) => {
+app.get('/', (req, res) => {
     res.render('index');
 });
 
