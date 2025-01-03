@@ -19,6 +19,7 @@
 .project-title a {
     text-decoration: none;
     color: #FF3366;
+    cursor: url(https://img.icons8.com/material-two-tone/24/blue-pointer.png), default;
 }
 
 .projects {
@@ -43,7 +44,7 @@
     font-weight: bold;
     color: #FF3366;
     margin: 0;
-    cursor: pointer;
+    cursor: url(https://img.icons8.com/material-two-tone/24/blue-pointer.png), default;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
@@ -103,3 +104,36 @@
     height: 100%;
     object-fit: fill;
 }
+
+@media (max-width: 768px) {
+    .projects {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .projects {
+        width: 133%;
+    }
+
+    .divider {
+        margin-top: 1.6rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-title {
+        font-size: 5rem;
+    }
+
+    .projects {
+        width: 175%;
+    }
+
+    .project-title, .project-summary {
+        font-size: xx-large;
+    }
+
+    .divider {
+        margin-top: 1.6rem;
+    }
+  }

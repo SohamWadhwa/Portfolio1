@@ -69,8 +69,8 @@
     color: #1A1A1A;
     text-decoration: none;
     background: transparent;
-    cursor: pointer;
     transition: all 0.3s ease-in-out;
+    cursor: url(https://img.icons8.com/material-two-tone/24/blue-pointer.png), default;
 }
 
 .icon-img {
@@ -86,3 +86,52 @@
 .icon:nth-of-type(1) {
     transform: translateX(0.5rem);
 }
+
+@media (max-width: 1024px) {
+    .contact-content {
+        height: fit-content;
+    }
+
+    .social-media {
+        z-index: 1000;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-content {
+      flex-direction: row;
+      text-align: center;
+      width: max-content;
+      height: fit-content;
+    }
+    .social-media a {
+      margin: 10px autocenter;
+    }
+  }
+
+@media (max-width: 480px) {
+    .contact-section-title {
+      font-size: 5rem;;
+      width: 180%;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+        width: 167%;
+        gap: 1rem;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .contact-content-text {
+        flex-direction: row;
+        width: 100%;
+
+        gap: 1rem;
+    }
+
+    .btn-email {
+        height: fit-content;
+    }
+  }

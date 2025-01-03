@@ -78,3 +78,51 @@
     font-weight: 500;
     gap: 5px;
 }
+
+@media (max-width: 1024px) {
+    .skill-container-main {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 97%;
+    }
+
+    .s-contain {
+        width: 100%;
+    }
+  }
+
+@media (max-width: 768px) {
+    .skill-container-main {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 147%;
+    }
+
+    .s-contain {
+        width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skill-container-main {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 195%;
+    }
+
+    .skills-title {
+        font-size: 5rem;
+    }
+
+    .web-dev-skill-title, .pro-lang-skill-title, .db-oth-skill-title {
+        font-size: 2rem;
+    }
+
+    .progress-txt, .progress-num {
+        font-size: 1.4rem;
+    }
+
+    .s-contain {
+        width: 100%;
+    }
+  }

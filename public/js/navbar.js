@@ -8,3 +8,12 @@ function initializeAnimations() {
 }
   
 document.addEventListener('DOMContentLoaded', initializeAnimations);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const hamburger = document.querySelector('.hamburger');
+    const navbarMenu = document.querySelector('#navbar-menu');
+
+    hamburger.addEventListener('click', () => {
+        navbarMenu.classList.toggle('active');
+    });
+});

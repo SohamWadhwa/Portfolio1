@@ -40,3 +40,43 @@
 .about-me-content p u {
     text-decoration-color: #ff3366;
 }
+
+@media (max-width: 768px) {
+    .about-me-container {
+      text-align: center;
+      margin-top: auto;
+    }
+  
+    .about-me-title {
+      font-size: 3rem; 
+      margin-bottom: 2px;
+    }
+  
+    .about-me-content {
+      font-size: 1rem; 
+      line-height: 1.6;
+      width: 145%; 
+    }
+  
+    .about-me-content p {
+      margin-bottom: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+
+    .about-me-container {
+      margin-top: 10rem;
+      width: 100%;
+    }
+
+    .about-me-title {
+      font-size: 5rem; 
+    }
+  
+    .about-me-content {
+      font-size: 1.5rem;
+    }
+  }
+  
+  
