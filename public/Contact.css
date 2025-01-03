@@ -1,0 +1,88 @@
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    gap: 20px;
+}
+
+.contact-section-title {
+    font-family: "Space Grotesk";
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.contact-section-title span {
+    color: #ff3366;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1rem;
+    padding: 3rem;
+    font-family: "Space Grotesk";
+    color: #1A1A1A;
+    background: rgba(255,255,255,0.5);
+    height: 30.5vh;
+    gap: 8rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+}
+
+.contact-content-text-line {
+    font-size: 24px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+.contact-content-text {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    gap: 2rem;
+}
+
+.btn-email {
+    width: fit-content;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background: white;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    color: #1A1A1A;
+}
+
+.icon {
+    display: flex;
+    gap: 1rem;
+    font-weight: 500;
+    color: #1A1A1A;
+    text-decoration: none;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.icon-img {
+    font-size: 1.7rem;
+    font-weight: 900;
+}
+
+.icon:hover {
+    color:#ff3366;
+    text-shadow: 0 0 100px #ff3366;
+}
+
+.icon:nth-of-type(1) {
+    transform: translateX(0.5rem);
+}

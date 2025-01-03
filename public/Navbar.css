@@ -1,0 +1,84 @@
+#navbar {
+    position: static;
+}
+
+.navbar-container {
+    background: none;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 60px;
+}
+
+.logo {
+    padding: 10px;
+    display: block;
+}
+
+#logo-content {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+#logo-content:hover {
+    cursor: pointer;
+}
+
+.logo-text {
+    font-size: 1.7rem;
+    font-family: "Space Grotesk";
+    font-weight: 700;
+    color: #1A1A1A;
+}
+
+.logo-icon {
+    margin-left: 5px;
+    padding-top: 5px;
+}
+
+#navbar-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    font-family: "Space Grotesk";
+}
+
+.navbar-menu-item {
+    position: relative;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #1A1A1A;
+}
+
+.navbar-menu-item a {
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+.navbar-menu-item::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 0.15rem;
+    background-color: #ff3366;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.navbar-menu-item:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navbar-menu-item::after {
+    transform-origin: right;
+}
